@@ -496,7 +496,12 @@ if(e.getNom().equals(txtnom.getText()) && e.getPrenom().equals(txtprenom.getText
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new NewJFrame().setVisible(true);
+                   NewJFrame frame= new NewJFrame();
+                        frame.setTitle("Gestion des etudiants");
+                        frame.setVisible(true);
+                        frame.setResizable(false);
+                        frame.setLocationRelativeTo(null);
+                
             }
         });
     }
